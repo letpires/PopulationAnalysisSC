@@ -1,51 +1,54 @@
-![](https://github.com/letpires/bootcamp_alura/blob/main/bootcamp.png)
+<p align="center">
+  <img src="https://github.com/letpires/population_analysis_sc/blob/main/banner_analise_populacional.png" >
+</p>
+
+<h2 align="center">
+  Machine Learning na COVID 19
+</h2>
+
+<p align="center">
+  Este projeto foi desenvolvido com o objetivo de criar um modelo de Machine Learning capaz de ajudar os médicos e enfermeiros do Hospital Sírio-Libanês a prever quais pacientes precisarão ser admitidos na unidade de terapia intensiva (UTI) devido a complicações da COVID-19 e, assim, definir qual a necessidade de leitos de UTI do Hospital a partir dos dados clínicos individuais disponíveis.🏥.</a>
+</p>
+
+<p align="center">
+    <img alt="Numpy" src="https://img.shields.io/badge/numpy-1.20.0-blue">
+    <img alt="Pandas" src="https://img.shields.io/badge/Pandas-1.2.3-yellow">
+    
+
+   </a>
+</p>
+
+## 📄 Como este repositório está estruturado
+
+- Veja os dados utilizados [DADOS DO HOSPITAL SÍRIO LIBANÊS](https://github.com/letpires/ICU_prediction_sirio_libanes/blob/main/Kaggle_Sirio_Libanes_ICU_Prediction.xlsx);
+- Leia o notebook do projeto [IMPLEMENTANDO MODELOS DE ML NA COVID 19](https://github.com/letpires/ICU_prediction_sirio_libanes/blob/main/Leticia_Pires.ipynb).
+
+## ➕ Contexto
+
+A pandemia de COVID-19 atingiu o mundo inteiro, sobrecarregando os sistemas de saúde - despreparados para uma solicitação tão intensa e demorada de leitos de UTI, profissionais, equipamentos de proteção individual e recursos de saúde. Países como o Brasila, que já possui sistema de saúde superlotados, vem sofrendo com a falta de leitos de Unidade de Terapia Intensiva (UTI) na internação de seus pacientes. Isso já aconteceu e vem acontecendo em alguns estados do Brasil, como Amazonas ([link da matéria](https://g1.globo.com/am/amazonas/noticia/2021/01/14/secretario-de-saude-do-am-fala-que-estado-vive-colapso-do-plano-logistico.ghtml)), onde pacientes não estão mais conseguindo acesso a UTI, assim como não possuem equipamentos básicos para a manutenção de vida, como oxigênio. Em Santa Catarina também o estado é crítico, onde os hospitais de Blumenau já anunciaram triagem para internação de acordo com a chance de sobreviver ([link da matéria](http://g1.globo.com/sc/santa-catarina/videos/v/hospitais-de-blumenau-anunciam-triagem-para-internacao-de-acordo-com-chance-de-sobreviver/9355080/)). Com base nesses acontecimentos e até mesmo na prevenção de sobrecarga do sistema de saúde das redes privadas, o Hospital Sírio-Libanês, busca prevenir e até mesmo predizer, com base em dados clínicos de seus pacientes, conforme forem sendo admitidos no ambiente hospitalar, a necessidade ou não de internação nas UTIs nas próximas horas. A proposta feita pelo Hospital Sírio Libanês está disposta [nesse link do Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
 
-<h1> ⚡ <b> O que é o projeto? </b> </h1>
+## ⚠️ Informações gerais
 
-Este projeto faz parte da comunidade da Alura, no qual imergimos em Ciência de Dados, desenvolvendo projetos reais da área da saúde. Ao todo são 12 semanas de imersão, divididos em 6 módulos:
+Em nosso conjunto de dados, temos a seguinte janela de dados, ou como é chamado no dataset, `WINDOW`:
+ |WINDOW|DESCRIÇÃO|
+|:---------:|:-----------------------------------:|
+| 0-2	    |  From 0 to 2 hours of the admission |
+| 2-4	    | From 2 to 4 hours of the admission  |
+| 4-6	    |  From 4 to 6 hours of the admission |
+| 6-12    |	From 6 to 12 hours of the admission |
+| Above-12|     	Above 12 hours from admission |
 
-<h3> Módulo 01:  Python e pandas para análise de dados reais </h3> 
-Neste módulo vamos utilizar Python e Pandas para explorar os dados da distribuição de verba da saúde. Os desafios se iniciam da leitura dos dados com pandas até a aquisição de fontes de dados externas para enriquecer suas anáilises, simulando os desafios diários de um cientista de dados. 
+- É critério obrigatório para este projeto, não utilizar os dados quando o paciente deu entrada na UTI -> ICU = 1, pois estes já terão ido diretamente para a UTI nas 2 primeiras horas, não importando para a predição;
+- A informação e dicas passadas pelo próprio Hospital e que foram seguidas para contrução do modelo é que: devem ser previstos pacientes que necessitarão de UTI e quais NÃO necessitarão de UTI.
 
-<b>Projeto:</b> Explorando dados financeiros do SUS.<br>
-<b>Ferramentas:</b> Python, Pandas, Matplotlib e Numpy.
+## 🚀 Tecnologias 
 
-<h3> Módulo 02:  Visualização de dados com Seaborn e Matplotlib </h3> 
-Vamos mais a fundo na análise exploratória de dados utilizando Seaborn, Matplotlib, boas práticas de visualização e técnicas de Storytelling para criar insights valiosos sobre nossos dados.
+- 📄 Bibliotecas: Pandas, Numpy, Seaborn, Matplotlib, Yellowbrick, Scikit Learn
+- ⚡️ Google Colaboratory.
 
-<b>Projeto:</b> Visualização e análise de dados aplicada a saúde.<br>
-<b>Ferramentas:</b> Python, Pandas, Matplotlib e Seaborn.
-
-<h3> Módulo 03:  Estatística com Python para análise de dados </h3> 
-Neste módulo vamos utilizar o Statsmodels, principal ferramenta estatística em python, para analisar uma base de dados com muita informação. Veremos como conceitos fundamentais da estatística, correlações e teste de hipóteses podem elevar as qualidades de nossas análises.
-
-<b>Projeto:</b> Estatística aplicada na exploração de dados da saúde de jovens e adolescentes.<br>
-<b>Ferramentas:</b> Python, Pandas, Seaborn e Statsmodels.
-
-<h3> Módulo 04:  Análise de séries temporais </h3> 
-Este módulo tem foco na análise e previsões de séries temporais. Vamos aplicar todo conhecimento adquirido para trabalhar com esse tipo de dados cheio de particularidades, além de estudar ferramentas específicas como Prophet, desenvolvida pelo Facebook.
-
-<b>Projeto:</b> Análise de séries temporais aplicado a saúde.<br>
-<b>Ferramentas:</b> Python, Pandas, Seaborn e Prophet.
-
-<h3> Módulo 05: Tratamento, análise e Machine Learning aplicado  </h3> 
-Este módulo tem como objetivo iniciar o desenvolvimento de um projeto que passará por todo workflow em Data Science, do entendimento do problema, tratamento e análise de dados até a proposta de solução desenvolvendo seu primeiro modelo de Machine Learning com Scikit-Learn.
-
-<b>Projeto:</b> Data Science aplicado aos dados da COVID-19.<br>
-<b>Ferramentas:</b> Python, Pandas, Seaborn, Matplotlib, Numpy e Scikit-learn.
-
-<h3> Módulo 06:  Modelos, métricas e validações em Machine Learning </h3> 
-Nossa proposta no curso anterior foi utilizar Machine Learning, como solução. Neste curso vamos explorar novos algoritmos, métricas e técnicas de validação utilizando a biblioteca Scikit-learn de forma prática e aprofundada.
-
-<b>Projeto:</b> Machine Learning aplicado aos dados da COVID-19.<br>
-<b>Ferramentas:</b> Python, Pandas, Seaborn, Matplotlib, Numpy e Scikit-learn.
 
 
 ---
 
-## 🛠 Tecnologias
-
-As análises foram desenvolvidos na linguagem Python, utilizando o Google colaboratory e bibliotecas como numpy, seaborn e matplotlib.
-
----
+Made with 💜 by Letícia Pires :wave: 
