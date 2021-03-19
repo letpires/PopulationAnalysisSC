@@ -7,7 +7,7 @@
 </h2>
 
 <p align="center">
-  Este projeto foi desenvolvido com o objetivo de .</a>
+  Este projeto foi desenvolvido com o objetivo de analisar como o número de habitantes do estado de Santa Catarina variou entre os anos de 1970 e 2020. .</a>
 </p>
 
 <p align="center">
