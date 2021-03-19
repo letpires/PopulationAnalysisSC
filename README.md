@@ -32,7 +32,7 @@ O objetivo do projeto foi analisar como o número de habitantes do estado de San
 
 ## 🚀 Tecnologias 
 
-- 📄 Bibliotecas: Pandas, Numpy, Seaborn, Matplotlib, Yellowbrick, Scikit Learn
+- 📄 Bibliotecas: Pandas, Numpy, Seaborn, Matplotlib;
 - ⚡️ Google Colaboratory.
 
 
