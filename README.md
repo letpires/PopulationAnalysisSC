@@ -26,7 +26,7 @@ O objetivo do projeto foi analisar como o número de habitantes do estado de San
 
 - Veja os dados utilizados [ESTIMATIVA POPULACIONAL NO BRASIL EM 2020](https://github.com/letpires/population_analysis_sc/blob/main/estimativa_dou_2020.csv);
 - Veja os dados utilizados [NASCIDOS VIVOS DE SANTA CATARINA 1994-2018](https://github.com/letpires/population_analysis_sc/blob/main/nascidos_vivos_sc_ano_mes_1994_2018.csv)
-- Leia o notebook do projeto [IMPLEMENTANDO MODELOS DE ML NA COVID 19](https://github.com/letpires/ICU_prediction_sirio_libanes/blob/main/Leticia_Pires.ipynb).
+- Leia o notebook do projeto [ANÁLISE POPULACIONAL DE SANTA CATARINA](https://github.com/letpires/population_analysis_sc/blob/main/projeto_analise_populacional_de_SC.ipynb).
 
 
 
