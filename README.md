@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/letpires/population_analysis_sc/blob/main/banner_analise_populacional.png" >
+  <img src="https://github.com/letpires/population_analysis_sc/blob/main/An%C3%A1lise%20populacional%20SC.png" >
 </p>
 
 <h2 align="center">
